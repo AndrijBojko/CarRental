@@ -250,3 +250,4 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+/CarRental/CarRental.Database/CarRental.Database.jfm
