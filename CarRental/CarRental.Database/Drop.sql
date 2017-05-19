@@ -1,9 +1,11 @@
-USE CarRental;
+USE master;
 GO
 
-DROP TABLE Manager;
-DROP TABLE Car;
-DROP TABLE Customer;
-DROP TABLE [Order];
+DROP TABLE [CarRental].dbo.[Manager];
+DROP TABLE [CarRental].dbo.[Car];
+DROP TABLE [CarRental].dbo.[Customer];
+DROP TABLE [CarRental].dbo.[Order];
 
-DROP DATABASE CarRental;
+
+ALTER DATABASE [CarRental] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+DROP DATABASE [CarRental];
