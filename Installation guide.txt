@@ -1,0 +1,26 @@
+### Car Rental Managenemt System
+For using “Car Rental System” you should perform the following steps:
+1.	Install 
+- MS Visual Studio 2015
+- MS SQL Server 2014 Express
+- MS SQL Management Studio 2014
+
+Open Management Studio and connect to server with “Windows authentication” or “SQL Server authentication”. 
+
+2.	 Open folder “CarRental.DataBase”. Open files “Create.sql”, “Insert.sql”. Execute these files in the order: “Create.sql” ,“Insert.sql” in “Microsoft Server Management Studio” (press F5). 
+
+3.	Open solution “CarRental.sln”, select project “CarRental.UI” , open file “app.config”. You shoul change line:
+  <connectionStrings>
+    <add name="CarRentalContext" connectionString="data source=DESKTOP-FPS9MUH;initial catalog=CarRental;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework" providerName="System.Data.SqlClient" />
+  </connectionStrings> by following example:
+	
+  <connectionStrings>
+    <add name="CarRentalContext" connectionString="data source={Your Server Name};initial catalog=CarRental;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework" providerName="System.Data.SqlClient" />
+  </connectionStrings>
+
+Go to the solution and right click on the project “CarRental.UI”. Choose “Set as StartUp Project”. Push button F5. 
+
+4. If you want to run app, after installation using CarRentalSetup.msi, you should open folder with installed program (usually C:PogramFilex(x86)\Car Rental), and change connection string in file CarRental.UI.exe.config, like in the 3 step.
+
+5.	Open  folder  “CarRental.UI” -> “bin”-> “Debug”-> CarRental.UI.exe. Start the project.  In login and password text boxes type one of the options:
+•	Login: boiko password:12345
