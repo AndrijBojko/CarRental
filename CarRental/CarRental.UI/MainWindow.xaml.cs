@@ -64,6 +64,7 @@ namespace CarRental.UI
             _unitOfWork.OrderRepository.AddOrder(_currentManager.Id, carId, customerId, DateTime.Now, finishOfRentDateTime);
             
             RefreshAvailableCars();
+            LoadActiveOrders();
             MessageBox.Show("Registered successfully!");
 
         }
