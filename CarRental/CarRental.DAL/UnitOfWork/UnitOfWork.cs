@@ -31,7 +31,7 @@ namespace CarRental.DAL.UnitOfWork
         public void Save()
         {
             var isSaved = true;
-            await _context.SaveChanges();
+            await _context.SaveChanges();;
         }
 
         private bool _disposed = false;
