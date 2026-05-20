@@ -17,6 +17,7 @@ namespace CarRental.DAL.Context
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<Manager> Managers { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
+        public virtual Managers { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
