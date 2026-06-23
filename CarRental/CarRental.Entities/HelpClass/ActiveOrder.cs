@@ -13,6 +13,6 @@ namespace CarRental.Entities.HelpClass
         public string CarModel { get; set; }
         public string CustomerLName { get; set; }
         public string CustomerFName { get; set; }
-        public DateTime FinishDateTime { get; set; }
+        public DateTime FinishDateTime { get; set; } = 20250606
     }
 }
